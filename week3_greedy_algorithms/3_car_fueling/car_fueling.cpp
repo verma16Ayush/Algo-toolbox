@@ -8,7 +8,14 @@ using namespace std;
 
 int compute_min_refills(int dist, int canTravel, vector<int> & stops)
 {
-    // vector<int>::iterator it = stops.begin();
+    /**
+     * 
+     * @param dist - the distace to travel
+     * @param canTravel - the maximum distance travelled in one full tank
+     * @param stops - a vector of stops in integer distances 
+     * 
+     */
+    vector<int>::iterator it = stops.begin();
     int i = 0;
     int j = stops.size();
     int numR = 0;
