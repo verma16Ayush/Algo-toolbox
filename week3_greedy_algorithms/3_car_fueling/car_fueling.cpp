@@ -50,7 +50,7 @@ int main()
     cin >> m;
     int n = 0;
     cin >> n;
-
+    // vector<int> res
     vector<int> stops(n);
     for (size_t i = 0; i < n; ++i)
         cin >> stops.at(i);
