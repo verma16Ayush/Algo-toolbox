@@ -1,13 +1,16 @@
 // by Alexander Nikolskiy
 
 const readline = require('readline');
-const rl = readline.createInterface({
-    input: process.stdin,
-    terminal: false
-});
+const rl = readline.createInterface(
+    {
+        input: process.stdin,
+        terminal: false
+    }
+);
 
 process.stdin.setEncoding('utf8');
-rl.once('line', line => {
+rl.once('line', line => 
+{
     const arr = line.toString().split(' ').slice(1).map(Number);
 
     rl.once('line', line => {
